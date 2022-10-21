@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="form">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+</head>
+<body>
+    <form action="http://bienvu.net/script.php" method="post" id="formulaire_contact" onSubmit="return checkForm(this);">
+        <h1>Vos coordonnées</h1>
+        <p class="etoiles">* Ces zones sont obligatoies pour envoyer le formulaire.</p>
+        <label for="societe">Société :</label><input type="text" name="societe" id="societe" > *<br>
+            <legend id="raisonSoc"></legend>
+        <label for="perCont">Personne à contacter :</label><input type="text" name="perCont" id="perCont" > *<br>
+        <legend id="raisonPersCont"></legend>
+        <label for="adrEnt">Adresse de l'entreprise :</label><input type="text" name="adrEnt" id="adrEnt" > *<br>
+        <legend id="raisonAdr"></legend>
+        <label for="codPost">Code Postal :</label><input type="text" name="codPost" id="codPost" > *<br>
+        <legend id="raisonCodpost"></legend>
+        <label for="mail">E mail :</label><input type="text" name="mail" id="mail" > *<br>
+        <legend id="raisonmail"></legend>
+        <label for="phone">Téléphone :</label><input type="text" name="phone" id="phone"><br>
+        <legend id="raisonTel"></legend>
+        <label for="environnement">Sélectionnez l'environnement technique du projet</label><br>
+        <select id="select" required> 
+            <option value="choix" selected>Choisissez</option>
+            <option>Acces</option>
+            <option>Java</option>
+            <option>Delphi</option>
+            <option>Windev</option>
+            <option>Visual Basic</option>
+            <option>Autres...</option>
+        </select><br>
+        <textarea name="zoneText" id="zoneText" cols="30" rows="3"></textarea><br>
+        <input type="submit" id="envoie" name="envoie" value="Envoyer" />
+    </form>
+    <input type="submit" id="effacer" name="effacer" value="Effacer" />
+
+
+        <script src="js/javascript.js"></script>
+</body>
+</html>
