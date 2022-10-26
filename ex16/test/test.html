@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test preventDefault()</title>
+</head>
+<body>
+    <a href="index.html" id="test">Index</a>
+    <p>Enable link: <input type="checkbox" id="cb"></p>
+
+
+    <script type="text/javascript">
+        const test = document.getElementById("test");
+        const cb = document.getElementById("cb");
+
+        test.addEventListener('click', function(e){
+            if(!cb.checked)
+                e.preventDefault();
+        });
+    </script>
+</body>
+</html>

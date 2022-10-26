@@ -10,18 +10,18 @@
     <form action="http://bienvu.net/script.php" method="post" id="formulaire_contact" onSubmit="return checkForm(this);">
         <h1>Vos coordonnées</h1>
         <p class="etoiles">* Ces zones sont obligatoies pour envoyer le formulaire.</p>
-        <label for="societe">Société :</label><input type="text" name="societe" id="societe" > *<br>
-            <legend id="raisonSoc"></legend>
-        <label for="perCont">Personne à contacter :</label><input type="text" name="perCont" id="perCont" > *<br>
-        <legend id="raisonPersCont"></legend>
-        <label for="adrEnt">Adresse de l'entreprise :</label><input type="text" name="adrEnt" id="adrEnt" > *<br>
-        <legend id="raisonAdr"></legend>
-        <label for="codPost">Code Postal :</label><input type="text" name="codPost" id="codPost" > *<br>
-        <legend id="raisonCodpost"></legend>
-        <label for="mail">E mail :</label><input type="text" name="mail" id="mail" > *<br>
-        <legend id="raisonmail"></legend>
-        <label for="phone">Téléphone :</label><input type="text" name="phone" id="phone"><br>
-        <legend id="raisonTel"></legend>
+        <label for="societe">Société :</label><input type="text" name="societe" id="societe" > *
+            <span id="raisonSoc"></span><br>
+        <label for="perCont">Personne à contacter :</label><input type="text" name="perCont" id="perCont" > *
+            <span id="raisonPersCont"></span><br>
+        <label for="adrEnt">Adresse de l'entreprise :</label><input type="text" name="adrEnt" id="adrEnt" > *
+            <span id="raisonAdr"></span><br>
+        <label for="codPost">Code Postal :</label><input type="text" name="codPost" id="codPost" > *
+            <span id="raisonCodpost"></span><br>
+        <label for="mail">E mail :</label><input type="text" name="mail" id="mail" > *
+            <span id="raisonmail"></span><br>
+        <label for="phone">Téléphone :</label><input type="text" name="phone" id="phone">
+            <span id="raisonTel"></span><br>
         <label for="environnement">Sélectionnez l'environnement technique du projet</label><br>
         <select id="select" required> 
             <option value="choix" selected>Choisissez</option>
@@ -34,9 +34,9 @@
         </select><br>
         <textarea name="zoneText" id="zoneText" cols="30" rows="3"></textarea><br>
         <input type="submit" id="envoie" name="envoie" value="Envoyer" />
-    </form>
-    <input type="submit" id="effacer" name="effacer" value="Effacer" />
+        <input type="reset" id="effacer" name="effacer" value="Effacer" />
 
+    </form>
 
         <script src="js/javascript.js"></script>
 </body>
