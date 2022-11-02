@@ -37,22 +37,26 @@ function Ex2(){
     function TableMultiplication(x){
         var i = 0;
         var res = 0;
+        var tab = new Array();
         for(i; i <= 10; i++){
             res = i * x;
-            console.log(res);
+            tab[i] = i+" x "+x+" = "+res+"\n";
         }
+
+        alert(tab);
     }
     TableMultiplication(table);
 }
 
 /*-------------------------------- EX 3 -----------------------------*/
 function Ex3(){
-    const tab = ["audrey","aurelien", "flavien", "jeremy", "laurent", "melik", "nouara", "salem", "samuel", "stephane"];
-    const saisie = window.prompt(`Veuillez choisir un prénom parmi ${[...tab]}.`)
+    const tab = ["audrey", "aurelien", "flavien", "jeremy", "laurent", "melik", "nouara", "salem", "samuel", "stephane"];
+    const saisie = window.prompt(`Veuillez choisir un prénom parmi ${[...tab]}.`);
     if(tab.includes(saisie)){
+        console.log(saisie);
 	    tab.splice(tab.indexOf(saisie),1);
 	    tab.push(" ");
-	    console.log(tab)
+	    console.log(tab);
     }
     else{
         alert("erreur")
